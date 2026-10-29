@@ -5,7 +5,7 @@ echo Repository: https://github.com/aaryanpote4-cpu/DE-Project
 echo ========================================================
 echo.
 
-git push -u origin main
+git push -u origin main --force
 
 if %ERRORLEVEL% EQU 0 (
     echo.
@@ -16,8 +16,7 @@ if %ERRORLEVEL% EQU 0 (
 ) else (
     echo.
     echo ========================================================
-    echo [NOTE] If this is your first push, please make sure
-    echo the repository exists and authentication is complete!
+    echo [ERROR] Push failed. Check details above.
     echo ========================================================
 )
 
